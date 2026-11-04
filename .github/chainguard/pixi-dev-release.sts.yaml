@@ -1,0 +1,8 @@
+# Lets prefix-dev/pixi's dev-release.yml, running on main, create releases here.
+issuer: https://token.actions.githubusercontent.com
+# prefix-dev's OIDC subjects include the owner and repository IDs.
+subject: repo:prefix-dev@111356225/pixi@633817517:ref:refs/heads/main
+claim_pattern:
+  job_workflow_ref: prefix-dev/pixi/\.github/workflows/dev-release\.yml@refs/heads/main
+permissions:
+  contents: write
